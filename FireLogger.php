@@ -90,7 +90,7 @@
             $this->log(Psr\Log\LogLevel::WARNING, $message, $context);
         }
 
-        public function log($level, $message, array $context = array() ) {
+        public function log($level, $message = "", array $context = array() ) {
             switch($level) {
                 case \Psr\Log\LogLevel::WARNING:
                 case \Psr\Log\LogLevel::ALERT:
